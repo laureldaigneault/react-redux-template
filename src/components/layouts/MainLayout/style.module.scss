@@ -1,0 +1,11 @@
+@import 'styles/_variables.scss';
+
+// MainLayout
+.base {
+  min-height: calc(100vh - $nav-height);
+  padding-top: $nav-height;
+}
+.noOffset {
+  min-height: 100vh;
+  padding-top: 0;
+}

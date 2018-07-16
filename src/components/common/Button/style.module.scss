@@ -1,0 +1,45 @@
+// Button
+@import "styles/_variables.scss";
+@import "styles/_mixins.scss";
+
+.base {
+  @include font(primary, x-small, regular);
+  display: inline-block;
+  padding: 16px 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  color: map-get($colors, black-text);
+  user-select: none;
+  transition: background-color 0.1s ease;
+}
+
+.state-primary {
+  background-color: map-get($colors, primary);
+  color: map-get($colors, white-text);
+
+  &:hover {
+    background-color: map-get($colors, primary-dark);
+  }
+}
+
+.state-accent {
+  background-color: map-get($colors, accent);
+}
+
+.state-black-fade {
+  background-color: rgba(map-get($colors, black), .5);
+  color: map-get($colors, white-text);
+
+  &:hover {
+    background-color: rgba(map-get($colors, black), .6);
+  }
+}
+
+.flex {
+  flex: 1;
+}
+
+.shadow {
+  box-shadow: 0 5px 7px 0 rgba(14, 21, 28, 0.15);
+}

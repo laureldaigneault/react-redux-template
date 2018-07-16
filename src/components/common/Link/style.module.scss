@@ -1,0 +1,30 @@
+// Link
+@import "styles/_variables.scss";
+
+.base {
+  color: map-get($colors, primary);
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    color: map-get($colors, primary-dark);
+  }
+}
+
+.state-white {
+  color: map-get($colors, white-text);
+
+  &:hover {
+    color: rgba(map-get($colors, white-text), .6);
+  }
+}
+.state-black {
+  color: map-get($colors, black-text);
+}
+.state-primary {
+  color: map-get($colors, primary);
+}
+.state-accent {
+  color: map-get($colors, accent);
+}

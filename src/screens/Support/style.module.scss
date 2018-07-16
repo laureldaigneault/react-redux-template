@@ -1,0 +1,12 @@
+// Support
+@import "styles/_typography.scss";
+
+.base {
+  flex: 1;
+}
+.boldTitle {
+  font-weight: map-get($font-weight, bold);
+}
+.content {
+  margin: 40px;
+}

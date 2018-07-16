@@ -1,0 +1,23 @@
+// Title
+@import "styles/_mixins.scss";
+@import "styles/_variables.scss";
+@import "styles/_typography.scss";
+
+.base {
+  @include font(primary, large, regular);
+}
+.size-xx-large {
+  font-size: map-get($font-size, xx-large);
+}
+.state-white {
+  color: map-get($colors, white-text);
+}
+.state-black {
+  color: map-get($colors, black-text);
+}
+.state-primary {
+  color: map-get($colors, primary);
+}
+.state-accent {
+  color: map-get($colors, accent);
+}

@@ -1,0 +1,30 @@
+// Input global styles
+@import "styles/_variables.scss";
+@import "styles/_mixins.scss";
+
+.base {
+  @include font(primary, x-small, regular);
+  height: 54px;
+  position: relative;
+  border-radius: 4px;
+  padding: 0 24px;
+  background-color: map-get($colors, very-light-gray);
+  color: map-get($colors, black-text);
+
+  &::placeholder {
+    color: map-get($colors, gray-text);
+  }
+}
+
+.big {
+  @include font(primary, small, regular);
+  height: 76px;
+  padding: 0 30px;
+  border-radius: 6px;
+}
+.giant {
+  @include font(primary, xxx-large, regular);
+  height: 126px;
+  padding: 0 20px;
+  border-radius: 10px;
+}

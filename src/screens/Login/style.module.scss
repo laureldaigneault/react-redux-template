@@ -1,0 +1,23 @@
+// Login
+@import "styles/_mixins.scss";
+@import "styles/_variables.scss";
+
+.base {
+  @include column(center, center);
+  flex: 1;
+}
+.title {
+  margin-bottom: 32px;
+}
+.formContainer {
+  @include column(center, center);
+  width: 400px;
+}
+.actionsContainer {
+  margin-top: 30px;
+  text-align: center;
+  a {
+    margin: 24px 0;
+    display: block;
+  }
+}

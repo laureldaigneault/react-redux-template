@@ -1,0 +1,26 @@
+/* general variables */
+
+$logo-height: 36px;
+$nav-height: 90px;
+
+$colors: (
+  primary: rgb(90, 90, 90), //#5a5aec
+  primary-dark: rgb(50, 50, 50), //#3e3eca
+  accent: rgb(239, 85, 122), //#ef557a
+  white: rgb(255, 255, 255), //#ffffff
+  black: rgb(0, 0, 0), //#000000
+  white-text: rgb(255, 255, 255), //#ffffff
+  gray-text: rgb(155, 155, 164), //#9b9ba4
+  black-text: rgb(45, 45, 55), //#2d2d37
+  very-light-gray: rgb(246, 246, 246), //#f6f6f6
+  light-gray: rgb(204, 204, 204), //#cccccc
+  gray: rgb(155, 155, 164), //#9b9ba4
+  charcoal-grey: rgb(45, 45, 55)
+);
+
+$breakpoints: (
+  mobile: 640px,
+  tablet: 780px,
+  small: 1024px,
+  medium: 1280px
+);

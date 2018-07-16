@@ -1,0 +1,60 @@
+// Navigation
+@import "styles/_mixins.scss";
+@import "styles/_variables.scss";
+
+.base {
+  @include row(center, center);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1px 4px 0 map-get($colors, very-light-gray);
+  padding: 18px 36px;
+  height: $nav-height;
+}
+
+.navItemContainer {
+  @include row(flex-start, center);
+}
+
+.menuList {
+  @include horizontal-list();
+}
+
+.menuItem {
+  @include font(primary, x-small, light);
+  color: map-get($colors, black-text);
+  padding: 18px 16px;
+  margin: 0 8px;
+}
+
+.menuItemSelected {
+  color: map-get($colors, primary);
+}
+
+.more {
+  @include font(primary, large, regular);
+  position: relative;
+  top: -14px;
+  margin-left: 20px;
+  margin-right: 40px;
+  height: 10px;
+  color: map-get($colors, black-text);
+  user-select: none;
+  cursor: pointer;
+}
+
+.logo {
+  position: absolute;
+  height: $logo-height;
+  left: 36px;
+  top: 25px;
+}
+
+.userActionsContainer {
+  @include row(flex-end, center);
+  position: absolute;
+  right: 0px;
+  height: 100%;
+}

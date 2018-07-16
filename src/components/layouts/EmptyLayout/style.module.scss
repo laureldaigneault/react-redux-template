@@ -1,0 +1,13 @@
+// EmptyLayout
+@import "styles/_variables.scss";
+
+.base {
+  min-height: 100vh;
+  display: flex;
+}
+.logo {
+  position: absolute;
+  height: $logo-height;
+  left: 36px;
+  top: 25px;
+}

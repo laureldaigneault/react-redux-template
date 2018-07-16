@@ -1,0 +1,49 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "debug": "^3.1.0",
+    "lodash": "^4.17.5",
+    "moment": "^2.22.0",
+    "node-sass": "^4.9.2",
+    "normalize.css": "^8.0.0",
+    "onchange": "^3.3.0",
+    "prop-types": "^15.6.2",
+    "query-string": "^6.1.0",
+    "react": "^16.3.1",
+    "react-app-rewire-css-modules": "github:codebandits/react-app-rewire-css-modules",
+    "react-app-rewired": "^1.5.2",
+    "react-dom": "^16.3.1",
+    "react-fontawesome": "^1.6.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.0",
+    "react-text-input": "0.0.8",
+    "redux": "4.0.0",
+    "redux-api-middleware": "^2.3.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-form": "^7.4.2",
+    "redux-persist": "^5.10.0",
+    "redux-promise-middleware": "^5.1.1",
+    "redux-reducer-side-effects": "^1.1.2",
+    "redux-thunk": "^2.3.0",
+    "redux-ui": "^0.1.1",
+    "sass-loader": "^7.0.3",
+    "uuid": "^3.2.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-app-rewired eject"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.10.0"
+  }
+}

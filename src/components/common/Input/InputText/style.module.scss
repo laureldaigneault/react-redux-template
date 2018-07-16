@@ -1,0 +1,41 @@
+// InputText
+@import "styles/_variables.scss";
+@import "styles/_mixins.scss";
+
+.base {
+  flex: 1;
+}
+.container {
+  position: relative;
+  display: flex;
+}
+.flex {
+  flex: 1;
+}
+.shadow {
+  box-shadow: 0 5px 14px 0 rgba(14, 21, 28, 0.15);
+}
+.margin-left {
+  margin-left: 8px;
+}
+.margin-right {
+  right: 8px;
+}
+.icon {
+  font-size: 20px;
+  position: absolute;
+  top: calc(50% - 11px);
+  color: map-get($colors, gray);
+}
+.icon-start {
+  left: 16px;
+}
+.icon-end {
+  right: 16px;
+}
+.iconPosition-start {
+  padding-left: 40px;
+}
+.iconPosition-end {
+  padding-right: 40px;
+}

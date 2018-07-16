@@ -1,0 +1,17 @@
+// InputContainer
+@import "styles/_mixins.scss";
+
+.base {
+  padding: 16px 8px;
+}
+.stretch {
+  @include row(flex-start);
+  flex: 1;
+  width: 100%;
+}
+.left {
+  @include row(flex-start);
+}
+.center {
+  @include row(center);
+}

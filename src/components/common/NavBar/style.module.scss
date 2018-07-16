@@ -1,0 +1,38 @@
+// NavBar
+@import "styles/_mixins.scss";
+@import "styles/_variables.scss";
+
+.base {
+  @include row(center, center);
+  background-color: map-get($colors, very-light-gray);
+
+  ul {
+    @include horizontal-list();
+  }
+}
+.sticky {
+  position: sticky;
+  top: 0px;
+}
+.align-center {
+  @include row(center, center);
+}
+.align-left {
+  @include row(flex-start, center);
+}
+.tab {
+  @include font(primary);
+  color: map-get($colors, gray-text);
+  padding: 24px 18px;
+  transition: background-color 0.1s ease;
+  box-sizing: border-box;
+  border-bottom: solid 2px transparent;
+
+  &:hover {
+    background-color: map-get($colors, very-light-gray);
+  }
+}
+.selectedTab {
+  color: map-get($colors, primary);
+  border-bottom: solid 2px map-get($colors, primary);
+}

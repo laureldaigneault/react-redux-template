@@ -1,0 +1,16 @@
+// AppLoading
+@import "styles/_mixins.scss";
+
+.base {
+  @include row(center, center);
+  @include fullscreen();
+  @include font(primary, medium, regular);
+
+  background-color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+.visible {
+  opacity: 1;
+}
